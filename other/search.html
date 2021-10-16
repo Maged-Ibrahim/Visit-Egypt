@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+#head{float:right;
+ background-color:#335566;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size:20px;
+ width:100%; height:20%; text-align:center}
+
+#content{color:#335566;
+  font-family: Arial, Helvetica, sans-serif;;
+   font-style: italic;
+ background-color:#ffffff;
+ }
+
+ #bottom{color:black; float:right;
+ background-color:#ffffff;
+ width:100%; height:8%; text-align:center
+ }
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+
+<div id="head"> <a href="main.html"><img src="maged.jpg" width="100" height="40" align="left" hspace="20" vspace="20"  alt="Maged Logo"  ></a><h3 ><center>Search</center></h3>
+</div>
+
+<div id="content">
+
+<h2>Search Places:</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Places ..." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:50%;">Place</th>
+    <th style="width:30%;">Category</th>
+    <th style="width:20%;">Budget</th>
+  </tr>
+  <tr>
+    <td> <a href="pyr.html"> Pyramids</td></a>
+    <td>Ancient Egypt</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td> <a href="cairot.html"> Cairo Tower</td></a>
+    <td>Modern</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td> <a href="mamr.html">The Mosque of Amr ibn al-As</td>
+    <td>Islamic History</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td> <a href="pyr.html">The Museum of Islamic Art in Cairo</td>
+    <td>Islamic History</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td> <a href="pyr.html">Pharaonic Village</td>
+    <td>Ancient Egypt</td>
+    <td>Medium</td>
+  </tr>
+  
+  </tr>
+ 
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</div>
+<div id="bottom">
+</div>
+</body>
+</html>

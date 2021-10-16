@@ -1,0 +1,131 @@
+<html>
+<head>
+<title> Budget </title>
+<style type="text/css">
+
+
+
+#head{float:right;
+ background-color:#5599bb;
+ font-size:20px;
+ width:100%; height:15%; text-align:center}
+
+
+
+
+#left{color:blue; float:right;
+	font-family: garamond;
+  src: url('garamond.ttf');
+   font-style: italic;
+ background-color:#999999;
+border-color:green;
+ width:20%; height:80%; text-align:center;}
+
+
+
+#content{color:black; float:right;
+	font-family: garamond;
+  src: url('garamond.ttf');
+   font-style: italic;
+   font-size: 22px;
+ background-color:#eeeeee;
+ width:80%; height:80%; text-align:center;}
+
+
+
+
+
+
+#bottom{color:black; float:right;
+ background-color:#5599bb;
+ width:100%; height:8%; text-align:center
+ }
+
+
+a:hover { 
+    background-color:#ffdd99;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="head"> <a href="main.html"> <img src="maged.jpg" width="100" height="40" align="left" hspace="20" vspace="20"  alt="Maged Logo"  ></a><h2 ><center>Budget</center></h2>
+</div>
+
+<div id="left">
+
+	
+<h2> <a href="main.html">Home </a><br />  </h2>  <br>
+ <h2> <a href="about.html">About </a><br /> </h2> <br>
+ <h2> <a href="login.html">Log-in </a><br /> </h2> <br>
+ <h2> <a href="ContactUs.html">Contact Us </a><br /> </h2> <br>
+ <h2> <a href="GpaCalc.html"> Budget</a><br /> </h2> <br>
+
+
+
+
+</div>
+
+<div id="content">
+
+<br><br><br><br><br><br>
+&nbsp;<p>Enter Your Budget Please:</p>
+
+<input id="myInput" type="text">
+
+ <button onclick="myFunction()">Enter</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var letter = document.getElementById("myInput").value;
+    var text;
+
+    
+    if (letter === "31" || letter==="32" || letter==="33"|| letter==="34" || letter==="36"|| letter==="37"|| letter==="38"|| letter==="39"|| letter==="40"|| letter==="41"|| letter==="42"|| letter==="43"|| letter==="44"|| letter==="45"|| letter==="46"|| letter==="47"|| letter==="48"|| letter==="49"|| letter==="50") {
+        text = "Cairo Tower<br>Egyptian Opera ";
+        
+   
+    } 
+    
+    
+          
+        
+
+
+else if (letter === "1" || letter === "1.0"|| letter==="0"|| letter==="0.1"|| letter==="0.2"|| letter==="0.3"|| letter==="0.4"|| letter==="0.5"|| letter==="0.6"|| letter==="0.7"|| letter==="0.8"|| letter==="0.9"|| letter==="1.1"|| letter==="1.2"|| letter==="1.3"|| letter==="1.4"|| letter==="1.5"|| letter==="1.6"|| letter==="1.7"|| letter==="1.8"|| letter==="1.9"|| letter==="2"|| letter==="3"|| letter==="4"|| letter==="5"|| letter==="6"|| letter==="7"|| letter==="8"|| letter==="9"|| letter==="10"|| letter==="11"|| letter==="12"|| letter==="13"|| letter==="14"|| letter==="15"|| letter==="16"|| letter==="17"|| letter==="18"|| letter==="19"|| letter==="20"|| letter==="21"||
+ letter==="22"|| letter==="23"|| letter==="24"|| letter==="25"|| letter==="26"|| letter==="27"|| letter==="28"|| letter==="29"|| 
+ letter==="30") {
+        text = "Pyramids Of Giza<br>Islamic Art Museum<br>Egyptian Geology Museum"; }
+
+
+        
+        
+        
+        
+   else {
+        text = "Unfortunately Your budget is not enough";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+
+
+</div>
+
+<div id="bottom">
+
+Copyright © 2020 [Maged]. All rights reserved.
+
+
+
+</div>
+
+</body>
+
+</html>
