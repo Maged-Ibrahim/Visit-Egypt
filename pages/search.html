@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-1" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0"><a href="main.html" class="text-black h2 mb-0">Discover <h5>By Maged</h5></a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li>
+                  <a href="main.html">Home</a>
+                </li>
+                <li class="has-children">
+                  <a href="destination.html">Categories</a>
+                  <ul class="dropdown">
+                    <li><a href="destination.html">Islamic History</a></li>
+                    <li><a href="destination1.html">Ancient Egypt</a></li>
+                    <li><a href="#">Ancient Greek <h4>Soon</h4></a></li>
+                    <li><a href="destination2.html">Educational</a></li>
+                   
+                  </ul>
+                </li>
+                
+        
+                
+                <li class="active"><a href="sign.html">Sign</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="search.html">Search</a></li>
+                <li class="active"><a href="recc.html">Reccomend</a></li>
+              
+                
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="booking.html">Book Online</a></li> -->
+              </ul>
+            </nav>
+          </div>
+
+          
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+<br>
+<br>
+<center>
+<h2>Search Places:</h2>
+
+<br><br>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search/Speak for Places" title="Type in a name" onclick="record()"  id="speechToText">
+ <script>
+        function record() {
+            var recognition = new webkitSpeechRecognition();
+            recognition.lang = "en-GB";
+
+            recognition.onresult = function(event) {
+                // console.log(event);
+                document.getElementById('speechToText').value = event.results[0][0].transcript;
+            }
+            recognition.start();
+
+        }
+    </script><br>
+
+<br><br>
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:50%;">Place</th>
+    <th style="width:30%;">Category</th>
+    <th style="width:10%;">Budget</th>
+  </tr>
+  <tr>
+    <td> <a href="prr.html">• Pyramids</td></a>
+    <td>Ancient Egypt</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td> <a href="cairot.html">• Mosque of Ibn Tulun
+</td></a>
+    <td>Islamic History</td>
+    <td>Zero</td>
+  </tr>
+  <tr>
+    <td> <a href="maia.html">• The Mosque of Amr ibn al-As</td>
+    <td>Islamic History</td>
+    <td>Zero</td>
+  </tr>
+  <tr>
+    <td> <a href="iam.html">• The Museum of Islamic Art in Cairo</td>
+    <td>Islamic History</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td> <a href="pv.html">• Pharaonic Village</td>
+    <td>Ancient Egypt</td>
+    <td>Medium</td>
+  </tr>
+   <tr>
+    <td> <a href="em.html">• The Egyptian museum</td>
+    <td>Ancient Egypt</td>
+    <td>Medium</td>
+  </tr> <tr>
+    <td> <a href="agg.html">• The Agricultural Museum</td>
+    <td>Educational</td>
+    <td>Low</td>
+  </tr> <tr>
+    <td> <a href="zooo.html">• The Zoological Museum</td>
+    <td>Educational</td>
+    <td>Low</td>
+  </tr> <tr>
+    <td> <a href="pyr.html">• Maadi public library</td>
+    <td> Educational</td>
+    <td>Low</td>
+  </tr> <tr>
+    <td> <a href="pyr.html">• The Museum of Egyptian Civilization</td>
+    <td>Educational</td>
+    <td>Medium</td>
+  </tr> <tr>
+    <td> <a href="pyr.html">• Egyptian Geological Museum In Maadi</td>
+    <td>Educational</td>
+    <td>Low</td>
+  </tr> <tr>
+    <td> <a href="pyr.html">• Egyptian Railway Museum</td>
+    <td>Educational</td>
+    <td>Low</td>
+  </tr>
+  </tr>
+ 
+</table>
+<br><br><br><br>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+<h1><a href="budget.html">Have a Limited Budget?</a> <br>
+Find Best Places for you... </h1>
+</center>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br><br><br>
+  <br><br>
+  
+  
+  
+  
+
+    <div class="site-section block-13 bg-light">
+  
+
+    <div class="container" data-aos="fade">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7">
+            <h2 class="font-weight-light text-black text-center">Find your intrest</h2>
+          </div>
+        </div>
+
+        <div class="nonloop-block-13 owl-carousel">
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="images/7.png" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p class="text-black lead">&ldquo;Ancient Egypt was a civilization of ancient North Africa, concentrated along the lower reaches of the Nile River, situated in the place that is now the country Egypt.&rdquo;</p>
+                  <p class="">&mdash; <em></em>, <a href="#">Egypt</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="images/3.png" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p class="text-black lead">&ldquo;Although its roots go back further, scholars typically date the creation of Islam to the 7th century, making it the youngest of the major world religions. Islam started in Mecca, in modern-day Saudi Arabia, during the time of the prophet Muhammad's life. Today, the faith is spreading rapidly throughout the world.&rdquo;</p>
+                  <p class="">&mdash; <em> <a href="#">Islamic History</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="images/greek.jpg" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p class="text-black lead">&ldquo;The Greeks made important contributions to philosophy, mathematics, astronomy, and medicine. ... The Greeks were known for their sophisticated sculpture and architecture. Greek culture influenced the Roman Empire and many other civilizations, and it continues to influence modern cultures today.&rdquo;</p>
+                  <p class="">&mdash; <em></em>, <a href="#">Ancient Greek</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4">About Website</h3>
+              <p>This website will solve the problem of finding new and unknown historical and educational places within Egypt, Cairo & Giza for anyone interesting in history or to gain knowledge, the website will solve the problem of making a plan for a day to make people not worry about where and when to go and help them share their new places with people like them whose share the same interest maybe on a specific historical areas in Egypt.</p>
+            </div>
+ <h4>&copy; Copyright 2020 (MMXX) <h5>By Maged</h5> </h4> 
+
+            
+            
+          </div>
+          
+         
+           
+
+          
+          
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+  </body>
+</html>
