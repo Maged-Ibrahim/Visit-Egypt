@@ -1,0 +1,25 @@
+
+
+#bottom{color:black; float:left;
+ background-color:#335566;
+ width:100%; height:8%; text-align:center
+ }
+
+
+#content{color:black; float:left;
+	font-family: garamond;
+  src: url('garamond.ttf');
+   font-style: italic;
+ background-color:#5599bb;
+ width:80%; height:80%; text-align:left}
+
+
+ a:hover { 
+    background-color:#ffdd99;
+
+}
+
+#head{float:left; color:white;
+ background-color:#335566;
+ font-size:20px;
+ width:100%; height:15%; text-align:center border-color: white; }
